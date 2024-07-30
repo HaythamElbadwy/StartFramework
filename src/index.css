@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: white;
+}
+
+nav {
+  background-color: #2c3e50;
+}
+
+nav .title a {
+  font-size: 2rem !important;
+}
+.fixed{
+  z-index: 100;
+}
+.active{
+  background-color: #1abc9c; 
+  padding: 10px;
+  border-radius: 13%;
+}
+.home,
+.about {
+  background-color: #1abc9c;
+}
+
+.home .imag img {
+  width: 250px;
+  display: inline;
+}
+
+.home .title h3,
+.about .title h3 {
+  font-size: 2.5rem !important;
+}
+
+nav ul li a {
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+}
+
+.portfolio .title h3 ,
+.contact .title h3{
+  font-size: 2.5rem;
+}
+.portfolio .line-star-portfolio .line-portfolio,
+.contact .line-star-contact .line-contact{
+  background-color: #1a252f;
+ 
+  height: 4px;
+  width: 80px;
+}
+.portfolio .line-star-portfolio,
+.contact .line-star-contact{
+  display: inline-flex;
+}
+.portfolio .img-portfolio .layer{
+width: 100%;
+height: 100%;
+top: 0;
+
+}
+.portfolio .img-portfolio .layer i{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  left: -216px;
+    
+  
+  }
+  .portfolio .img-portfolio .layer:hover i{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    
+      
+    
+    }
+  .portfolio .img-portfolio{
+    overflow: hidden;
+    position: relative;
+  }
+.portfolio .img-portfolio .layer:hover{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #1abc9ce6;
+  opacity: 1;
+  cursor: pointer;
+  transition: .5s all;
+  
+  }
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.line-star {
+  display: inline-flex;
+}
+
+.line-star .line {
+  background-color: white;
+  height: 4px;
+  width: 80px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+form{
+  width: 75%;
+}
+form button{
+  background-color: #1abc9c;
+}
+form .group .border-bottom{
+  border-bottom: 1px solid #dee2e6 !important;
+}
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+
+}
+
+footer .icons i {
+  border: 1px white solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.copyright {
+  background-color: #1a252f;
+
+}
+
+footer h2 {
+  font-weight: 500;
+  font-size: 1.75rem;
+}
